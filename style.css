@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+html {
+  width: 100%; 
+  height:100%; 
+ }
+
+body {
+ width: 80%;
+ height:80%;
+ font-family: 'Open Sans', sans-serif;
+ color: #fff;
+ font-size: 18px;
+ text-align: center;
+ letter-spacing: 1.2px;
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3E1D6D', endColorstr='#092756',GradientType=1 );
+  padding: 90px;
+  overflow:hidden ;
+}
+
+
+#heading {
+  width: 100%;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    color: #1e0688;
+}
+
+#h5 {
+  width: 100%;
+  position: absolute;
+  left: 0%;
+  top: 9%;
+  color: #1e0688;
+}
+
+#h6 {
+  width: 100%;
+  position: absolute;
+  left: 0%;
+  top: 14%;
+  color: #1e0688;
+}
+
+#webcamButton{
+  color: #000;
+  
+}
+video {
+  display: block;
+}
+
+section {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+.removed {
+  display: none;
+}
+
+.invisible {
+  opacity: 0.2;
+}
+.camView {
+  position: absolute; /* Position the camView div */
+  top: 65%; /* Move it 50% down from the top */
+  left: 50%; /* Move it 50% from the left */
+  transform: translate(-50%, -50%); /* Center it properly */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-direction: column; /* Stack items vertically */
+  cursor: pointer;
+}
+
+.camView p {
+  position: absolute;
+  padding: 5px;
+  background-color: rgba(255, 111, 0, 0.85);
+  color: #ffffff;
+  border: 1px dashed rgba(255, 255, 255, 0.7);
+  z-index: 2;
+  font-size: 12px;
+}
+
+
+.highlighter {
+  background: rgba(0, 255, 0, 0.25);
+  border: 1px dashed #fff;
+  z-index: 1;
+  position:fixed;
+}
+
+
+
+#resetButton {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+}
